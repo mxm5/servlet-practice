@@ -8,5 +8,9 @@ public class SimpleFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         String remoteAddr = servletRequest.getRemoteAddr();
         String localAddr = servletRequest.getLocalAddr();
+        String serverName = servletRequest.getServerName();
+        int remotePort = servletRequest.getRemotePort();
+        System.out.println(remoteAddr + "    " + localAddr +"  "+ serverName +"  "+remotePort);
+        filterChain.doFilter(servletRequest,servletResponse);
     }
 }
