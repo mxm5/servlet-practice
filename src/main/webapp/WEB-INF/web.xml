@@ -24,6 +24,19 @@
       </url-pattern>
   </filter-mapping>
 
+
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>ir.maktab.AddServlet</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <servlet-name>sq</servlet-name>
+    <servlet-class>ir.maktab.SqServlet</servlet-class>
+  </servlet>
+
+
   <servlet>
     <servlet-name>SimpleServlet</servlet-name>
     <servlet-class>
@@ -31,7 +44,15 @@
     </servlet-class>
   </servlet>
   <servlet-mapping>
+    <servlet-name>sq</servlet-name>
+    <url-pattern>/sq</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
     <servlet-name>SimpleServlet</servlet-name>
     <url-pattern>/sss</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/add</url-pattern>
   </servlet-mapping>
 </web-app>
