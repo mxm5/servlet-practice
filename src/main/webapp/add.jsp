@@ -20,9 +20,13 @@
 
         int n1 = Integer.parseInt(n11);
         int n2 = Integer.parseInt(n21);
-        n1=n1+n2;
-        out.println("sum is"+n1);
-%>
+        n1=n1+n2;%>
+        <h1>
+            
+            <%
+            out.println("sum is"+n1);
+            %>
+        </h1>
 
 
 <!-- Optional JavaScript -->
